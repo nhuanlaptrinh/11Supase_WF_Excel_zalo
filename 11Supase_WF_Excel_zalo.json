@@ -18,7 +18,7 @@
           }
         }
       },
-      "id": "7c82ad43-3416-4e45-9b67-4132a0f64e08",
+      "id": "c18ddfdf-b525-4462-af51-bd715baafa57",
       "name": "Download File",
       "type": "n8n-nodes-base.googleDrive",
       "typeVersion": 3,
@@ -29,42 +29,7 @@
       "executeOnce": true,
       "credentials": {
         "googleDriveOAuth2Api": {
-          "id": "e2osjsVHgsECOqGE_INVALID",
-          "name": "Google Drive account 4"
-        }
-      }
-    },
-    {
-      "parameters": {
-        "pollTimes": {
-          "item": [
-            {
-              "mode": "everyMinute"
-            }
-          ]
-        },
-        "triggerOn": "specificFolder",
-        "folderToWatch": {
-          "__rl": true,
-          "value": "1QjXff8V1xgtME8XEkyrQQN3jBuq4dcgN",
-          "mode": "list",
-          "cachedResultName": "00.Tpdf",
-          "cachedResultUrl": "https://drive.google.com/drive/folders/1QjXff8V1xgtME8XEkyrQQN3jBuq4dcgN"
-        },
-        "event": "fileCreated",
-        "options": {}
-      },
-      "id": "6839fd5b-a3d2-495d-81f4-7238d21c263c",
-      "name": "File Created",
-      "type": "n8n-nodes-base.googleDriveTrigger",
-      "typeVersion": 1,
-      "position": [
-        -224,
-        560
-      ],
-      "credentials": {
-        "googleDriveOAuth2Api": {
-          "id": "vT971jVDaeXm38jP_INVALID",
+          "id": "vT971jVDaeXm38jP",
           "name": "Google Drive account 18"
         }
       }
@@ -81,26 +46,61 @@
         "triggerOn": "specificFolder",
         "folderToWatch": {
           "__rl": true,
-          "value": "1QjXff8V1xgtME8XEkyrQQN3jBuq4dcgN",
+          "value": "15Lw7che9dDhSLb90Q4n8FYnE0Y0A0RDO",
           "mode": "list",
-          "cachedResultName": "00.Tpdf",
-          "cachedResultUrl": "https://drive.google.com/drive/folders/1QjXff8V1xgtME8XEkyrQQN3jBuq4dcgN"
+          "cachedResultName": "00.Rexcel",
+          "cachedResultUrl": "https://drive.google.com/drive/folders/15Lw7che9dDhSLb90Q4n8FYnE0Y0A0RDO"
+        },
+        "event": "fileCreated",
+        "options": {}
+      },
+      "id": "b4f78e3d-0faa-4a19-9034-dfcb71f26ac0",
+      "name": "File Created",
+      "type": "n8n-nodes-base.googleDriveTrigger",
+      "typeVersion": 1,
+      "position": [
+        -176,
+        560
+      ],
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "vT971jVDaeXm38jP",
+          "name": "Google Drive account 18"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "pollTimes": {
+          "item": [
+            {
+              "mode": "everyMinute"
+            }
+          ]
+        },
+        "triggerOn": "specificFolder",
+        "folderToWatch": {
+          "__rl": true,
+          "value": "15Lw7che9dDhSLb90Q4n8FYnE0Y0A0RDO",
+          "mode": "list",
+          "cachedResultName": "00.Rexcel",
+          "cachedResultUrl": "https://drive.google.com/drive/folders/15Lw7che9dDhSLb90Q4n8FYnE0Y0A0RDO"
         },
         "event": "fileUpdated",
         "options": {}
       },
-      "id": "50f0375d-8e4e-4a2a-85cc-bc4cdc42f5f9",
+      "id": "43d3199a-1fc0-405c-b819-9d9d8c95669a",
       "name": "File Updated",
       "type": "n8n-nodes-base.googleDriveTrigger",
       "typeVersion": 1,
       "position": [
-        -208,
+        -160,
         800
       ],
       "credentials": {
         "googleDriveOAuth2Api": {
-          "id": "e2osjsVHgsECOqGE_INVALID",
-          "name": "Google Drive account 4"
+          "id": "vT971jVDaeXm38jP",
+          "name": "Google Drive account 18"
         }
       }
     },
@@ -111,7 +111,7 @@
         "filterType": "string",
         "filterString": "=metadata->>file_id=like.*{{ $json.file_id }}*"
       },
-      "id": "d316ad00-94e5-4c91-ad17-7dbeb8a3be09",
+      "id": "b95dfe4d-0d14-428a-9fc0-d80f33beb4df",
       "name": "Delete Old Doc Rows",
       "type": "n8n-nodes-base.supabase",
       "typeVersion": 1,
@@ -122,7 +122,7 @@
       "alwaysOutputData": true,
       "credentials": {
         "supabaseApi": {
-          "id": "9U5AJS3DW39AREVd_INVALID",
+          "id": "gJbsSsZuF9wkSHGU",
           "name": "Supabase account"
         }
       }
@@ -131,28 +131,28 @@
       "parameters": {
         "content": "## RAG AI Agent with Chat Interface",
         "height": 465,
-        "width": 1036
+        "width": 1148
       },
-      "id": "183f9daf-27b2-489b-908e-d433a7c3b8af",
+      "id": "022949c9-0bae-4102-af64-53ba5b62c210",
       "name": "Sticky Note2",
       "type": "n8n-nodes-base.stickyNote",
       "typeVersion": 1,
       "position": [
-        720,
-        0
+        528,
+        -32
       ]
     },
     {
       "parameters": {
         "options": {}
       },
-      "id": "2d4a158b-1db0-4643-824a-d5fd6a9510f7",
+      "id": "31965ed3-bff1-421b-84d3-70f6702bc97c",
       "name": "Respond to Webhook",
       "type": "n8n-nodes-base.respondToWebhook",
       "typeVersion": 1.1,
       "position": [
-        1584,
-        80
+        1408,
+        48
       ]
     },
     {
@@ -175,29 +175,29 @@
         },
         "options": {}
       },
-      "id": "9ac9b2d1-e7d8-4a75-9dc3-cf9d67023709",
+      "id": "84c3e992-0b4e-469a-9977-bce9924f5b07",
       "name": "Edit Fields",
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        1024,
-        80
+        848,
+        48
       ]
     },
     {
       "parameters": {
         "httpMethod": "POST",
-        "path": "trolynghiepvu123",
+        "path": "trolynghiepvu123mmmmm",
         "responseMode": "responseNode",
         "options": {}
       },
-      "id": "86c645de-8dca-4353-95fa-5c272da339ec",
+      "id": "75d492ba-4de1-45d1-85ea-7cda3b6a4b69",
       "name": "Webhook",
       "type": "n8n-nodes-base.webhook",
       "typeVersion": 2,
       "position": [
-        752,
-        80
+        576,
+        48
       ],
       "webhookId": "5e7bc971-122a-4d85-9bbd-34b5cf75104d"
     },
@@ -209,13 +209,13 @@
           "systemMessage": "=Xin chào! Tôi là Thu Nhi - Trợ lý Nghiệp Vụ của Công ty Anh Lập Trình 👋\nTôi có thể hỗ trợ bạn về:\n\nTrả lời câu hỏi dựa trên dữ liệu quy trình: Khi bạn đặt câu hỏi, hãy luôn kiểm tra node “Get File Contents” để lấy nội dung tệp và dùng đúng thông tin đó để phản hồi.\n\nĐảm bảo tính nhất quán: Mọi lần trả lời đều thực hiện bước kiểm tra node “Get File Contents” trước, và trả lời theo nội dung lấy được từ node này (luôn luôn như vậy)."
         }
       },
-      "id": "d16b80ef-d17b-4388-bec5-3d973c699057",
+      "id": "b01e75d0-3938-4fc9-be01-1df5516c4e49",
       "name": "RAG AI Agent",
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 1.6,
       "position": [
-        1248,
-        80
+        1072,
+        48
       ]
     },
     {
@@ -353,7 +353,7 @@
           "fallbackOutput": "extra"
         }
       },
-      "id": "c28d561c-1796-4534-bf7e-258791f2592e",
+      "id": "1c441efd-02cf-459e-ba89-bfbbf115e119",
       "name": "Switch",
       "type": "n8n-nodes-base.switch",
       "typeVersion": 3,
@@ -367,7 +367,7 @@
         "operation": "xlsx",
         "options": {}
       },
-      "id": "4b99809d-8834-4d18-9bbc-c9417d6e1640",
+      "id": "e3ede333-c74d-44cd-b44f-51d6fd68fb8b",
       "name": "Extract from Excel",
       "type": "n8n-nodes-base.extractFromFile",
       "typeVersion": 1,
@@ -402,7 +402,7 @@
         3104,
         640
       ],
-      "id": "b4a32b9a-9e1a-4710-a311-06e06d8f9cab",
+      "id": "b6c1d2b2-3806-4710-920e-1be224ecebb9",
       "name": "Set Schema"
     },
     {
@@ -415,7 +415,7 @@
         1824,
         896
       ],
-      "id": "3ad52cc5-7f84-43b4-a6ef-fec8ca91bf47",
+      "id": "e0914313-387a-4130-aed5-bb125c85c195",
       "name": "Extract from CSV"
     },
     {
@@ -427,11 +427,11 @@
       },
       "type": "n8n-nodes-base.stickyNote",
       "position": [
-        0,
-        0
+        -176,
+        -32
       ],
       "typeVersion": 1,
-      "id": "d99e68a8-df7d-47b1-85b7-887e7491c7e1",
+      "id": "e0f33cf7-19cd-44c7-8216-59568d342ea1",
       "name": "Sticky Note3"
     },
     {
@@ -456,14 +456,14 @@
       "type": "n8n-nodes-base.postgresTool",
       "typeVersion": 2.5,
       "position": [
-        1360,
-        304
+        1184,
+        272
       ],
-      "id": "cff88089-1259-4ff4-a77a-24ece427def9",
+      "id": "74715ed2-318b-4c00-839d-089e5838275b",
       "name": "List Documents",
       "credentials": {
         "postgres": {
-          "id": "lZKNcJhVZD5rCkZk_INVALID",
+          "id": "lZKNcJhVZD5rCkZk",
           "name": "Postgres account 3"
         }
       }
@@ -481,14 +481,14 @@
       "type": "n8n-nodes-base.postgresTool",
       "typeVersion": 2.5,
       "position": [
-        1536,
-        304
+        1360,
+        272
       ],
-      "id": "b4bb6947-d852-45c0-babe-9fa4d6b20a60",
+      "id": "ecaad323-aecc-4f5e-8cd5-1c31dba14745",
       "name": "Get File Contents",
       "credentials": {
         "postgres": {
-          "id": "lZKNcJhVZD5rCkZk_INVALID",
+          "id": "lZKNcJhVZD5rCkZk",
           "name": "Postgres account 3"
         }
       }
@@ -505,7 +505,7 @@
         32,
         592
       ],
-      "id": "a7c6ce4c-7582-41e3-aeef-2bfff43e7c87",
+      "id": "5a5530cd-b3e5-43ec-8eee-76f90b23abb9",
       "name": "Loop Over Items"
     },
     {
@@ -517,14 +517,14 @@
       "type": "n8n-nodes-base.postgres",
       "typeVersion": 2.5,
       "position": [
-        256,
-        80
+        80,
+        48
       ],
-      "id": "a621ef17-93b3-47e2-af67-a6d83a53d856",
+      "id": "c769145b-c63e-4cee-a48a-28846611f39b",
       "name": "Create Documents Table and Match Function",
       "credentials": {
         "postgres": {
-          "id": "lZKNcJhVZD5rCkZk_INVALID",
+          "id": "lZKNcJhVZD5rCkZk",
           "name": "Postgres account 3"
         }
       }
@@ -549,13 +549,13 @@
         752,
         608
       ],
-      "id": "3e65b597-93d7-4c62-8e0d-d4cbd21d4a03",
+      "id": "8de1972a-4591-43da-9aea-1d1e6f53a38a",
       "name": "Delete Old Data Rows",
       "alwaysOutputData": true,
       "executeOnce": true,
       "credentials": {
         "supabaseApi": {
-          "id": "9U5AJS3DW39AREVd_INVALID",
+          "id": "gJbsSsZuF9wkSHGU",
           "name": "Supabase account"
         }
       }
@@ -646,12 +646,12 @@
         912,
         608
       ],
-      "id": "1cd39f59-a1b3-49df-b8b0-47964cf1eb9d",
+      "id": "8915d108-56d0-40d2-adfb-f0529e9fd754",
       "name": "Insert Document Metadata",
       "executeOnce": true,
       "credentials": {
         "postgres": {
-          "id": "lZKNcJhVZD5rCkZk_INVALID",
+          "id": "lZKNcJhVZD5rCkZk",
           "name": "Postgres account 3"
         }
       }
@@ -719,11 +719,11 @@
         2368,
         912
       ],
-      "id": "3bdde09e-cbe2-43b7-8415-c8acf6192e82",
+      "id": "07212d15-59db-4c51-bc72-65cf776005db",
       "name": "Insert Table Rows",
       "credentials": {
         "postgres": {
-          "id": "lZKNcJhVZD5rCkZk_INVALID",
+          "id": "lZKNcJhVZD5rCkZk",
           "name": "Postgres account 3"
         }
       }
@@ -813,11 +813,11 @@
         3456,
         640
       ],
-      "id": "f66eecef-1f5a-4539-9a8d-19a9871d74d5",
+      "id": "cc7b0a54-8828-4879-8a15-2b8cdd745f6c",
       "name": "Update Schema for Document Metadata",
       "credentials": {
         "postgres": {
-          "id": "lZKNcJhVZD5rCkZk_INVALID",
+          "id": "lZKNcJhVZD5rCkZk",
           "name": "Postgres account 3"
         }
       }
@@ -832,14 +832,14 @@
       "typeVersion": 2.5,
       "position": [
         320,
-        1664
+        1808
       ],
-      "id": "3e94f10f-9589-442c-8ad8-24e4b8062634",
+      "id": "e7429e26-f2eb-4237-bd97-a3c2fbac2273",
       "name": "Node_postgres",
       "alwaysOutputData": true,
       "credentials": {
         "postgres": {
-          "id": "lZKNcJhVZD5rCkZk_INVALID",
+          "id": "lZKNcJhVZD5rCkZk",
           "name": "Postgres account 3"
         }
       }
@@ -872,10 +872,10 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        1840,
-        1664
+        1440,
+        1808
       ],
-      "id": "e867b0bc-2c56-4cb8-a747-ae410ed42a0c",
+      "id": "f642276b-5267-40b6-ab9e-e3670cf212dc",
       "name": "If"
     },
     {
@@ -908,7 +908,7 @@
         944,
         832
       ],
-      "id": "d94db8a2-797d-4524-a40b-f3f8ed8cb4e6",
+      "id": "dd576e00-932c-420e-8d62-34d02e980089",
       "name": "If1"
     },
     {
@@ -929,9 +929,9 @@
       "typeVersion": 1,
       "position": [
         512,
-        1664
+        1808
       ],
-      "id": "75a5c367-7a71-48dd-be57-b47fd1252431",
+      "id": "1e26610d-207c-45b8-b1d5-79f1739f2e5e",
       "name": "AggregateDB"
     },
     {
@@ -942,9 +942,9 @@
       "typeVersion": 2,
       "position": [
         1168,
-        1664
+        1808
       ],
-      "id": "fcc90955-c198-4a7d-be17-0d5358307af3",
+      "id": "0186dbb5-3770-4ec3-925f-25d5f4c2b4b0",
       "name": "Code1",
       "alwaysOutputData": true
     },
@@ -962,9 +962,9 @@
       "typeVersion": 1.2,
       "position": [
         32,
-        1664
+        1808
       ],
-      "id": "624ae498-3e8b-4749-bf6a-4701bfec3702",
+      "id": "cd96adf4-4531-4241-8e35-41f1326e6b90",
       "name": "Schedule Trigger"
     },
     {
@@ -977,10 +977,10 @@
       "type": "n8n-nodes-base.splitInBatches",
       "typeVersion": 3,
       "position": [
-        2128,
-        1648
+        1728,
+        1792
       ],
-      "id": "cf8a765d-af80-4740-9bb6-7f96a48c16ba",
+      "id": "a45dce67-a161-497d-867b-19e22b02daff",
       "name": "Loop Over Items2"
     },
     {
@@ -1000,16 +1000,16 @@
       "type": "n8n-nodes-base.supabase",
       "typeVersion": 1,
       "position": [
-        2384,
-        1680
+        1984,
+        1824
       ],
-      "id": "6e1d54d8-3ab8-41fc-9b13-5065f5508304",
+      "id": "4eacd8d8-c273-4591-a866-ab010fbd915f",
       "name": "Delete Document_Rows",
       "alwaysOutputData": true,
       "executeOnce": true,
       "credentials": {
         "supabaseApi": {
-          "id": "9U5AJS3DW39AREVd_INVALID",
+          "id": "gJbsSsZuF9wkSHGU",
           "name": "Supabase account"
         }
       }
@@ -1031,16 +1031,16 @@
       "type": "n8n-nodes-base.supabase",
       "typeVersion": 1,
       "position": [
-        2560,
-        1680
+        2160,
+        1824
       ],
-      "id": "2f1b2f3d-1c2a-48ba-b465-7abd216d5a41",
+      "id": "4fbdffc2-3c3f-43c7-959c-b3b44096dd34",
       "name": "Delete Document_Metadata",
       "alwaysOutputData": true,
       "executeOnce": true,
       "credentials": {
         "supabaseApi": {
-          "id": "9U5AJS3DW39AREVd_INVALID",
+          "id": "gJbsSsZuF9wkSHGU",
           "name": "Supabase account"
         }
       }
@@ -1052,18 +1052,18 @@
         "filterType": "string",
         "filterString": "=metadata->>file_id=like.*{{ $('Loop Over Items2').item.json.id }}*"
       },
-      "id": "082c9682-d9fe-49e0-a363-36e11ae834c8",
+      "id": "6709b210-23ab-4ad8-8ec7-6ac3fe3b110c",
       "name": "Delete Documents",
       "type": "n8n-nodes-base.supabase",
       "typeVersion": 1,
       "position": [
-        3232,
-        1680
+        2832,
+        1824
       ],
       "alwaysOutputData": true,
       "credentials": {
         "supabaseApi": {
-          "id": "9U5AJS3DW39AREVd_INVALID",
+          "id": "gJbsSsZuF9wkSHGU",
           "name": "Supabase account"
         }
       }
@@ -1096,10 +1096,10 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        2848,
-        1680
+        2448,
+        1824
       ],
-      "id": "19a14639-e73c-4ce2-93ee-90cc4af815fa",
+      "id": "a634185c-1b0d-4cfd-9645-66a25d93a604",
       "name": "If3"
     },
     {
@@ -1109,10 +1109,10 @@
         "filter": {
           "folderId": {
             "__rl": true,
-            "value": "157nA55QsBR1wYO0NMO5mubVUQGqlz-2r",
+            "value": "15Lw7che9dDhSLb90Q4n8FYnE0Y0A0RDO",
             "mode": "list",
-            "cachedResultName": "TroLyNghiepVu",
-            "cachedResultUrl": "https://drive.google.com/drive/folders/157nA55QsBR1wYO0NMO5mubVUQGqlz-2r"
+            "cachedResultName": "00.Rexcel",
+            "cachedResultUrl": "https://drive.google.com/drive/folders/15Lw7che9dDhSLb90Q4n8FYnE0Y0A0RDO"
           },
           "whatToSearch": "files",
           "includeTrashed": false
@@ -1127,15 +1127,15 @@
       "typeVersion": 3,
       "position": [
         720,
-        1664
+        1808
       ],
-      "id": "b0928748-9820-41a1-98a6-92a03fc93223",
+      "id": "d9cb6fbe-3e6f-4332-a15e-af365056270a",
       "name": "Node_drive",
       "alwaysOutputData": true,
       "credentials": {
         "googleDriveOAuth2Api": {
-          "id": "e2osjsVHgsECOqGE_INVALID",
-          "name": "Google Drive account 4"
+          "id": "vT971jVDaeXm38jP",
+          "name": "Google Drive account 18"
         }
       }
     },
@@ -1149,9 +1149,9 @@
       "typeVersion": 1,
       "position": [
         944,
-        1664
+        1808
       ],
-      "id": "701e3285-4ca7-4f21-bb34-ebc20ec86418",
+      "id": "9826a2c2-1234-4f45-8dd5-9344119366dc",
       "name": "AggregateGGDRive"
     },
     {
@@ -1192,7 +1192,7 @@
         },
         "options": {}
       },
-      "id": "eef4f262-14bb-4f5b-8f2f-8ea669eb5309",
+      "id": "a9fefb56-afac-485f-823a-d46f9a888d51",
       "name": "Set File ID_!",
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
@@ -1204,17 +1204,17 @@
     {
       "parameters": {
         "content": "## Tool to Add a Google Drive File to Vector DB",
-        "height": 80,
-        "width": 573,
+        "height": 1104,
+        "width": 4269,
         "color": 5
       },
-      "id": "aced2ba9-3acb-4b75-b643-d463f4666c2f",
+      "id": "3fad11df-49c6-4d2c-9182-6fa3dddedf16",
       "name": "Sticky Note4",
       "type": "n8n-nodes-base.stickyNote",
       "typeVersion": 1,
       "position": [
-        32,
-        480
+        -192,
+        496
       ]
     },
     {
@@ -1224,14 +1224,14 @@
       "type": "@n8n/n8n-nodes-langchain.memoryPostgresChat",
       "typeVersion": 1.3,
       "position": [
-        1232,
-        304
+        1056,
+        272
       ],
-      "id": "0902875d-7ed5-4beb-b458-ef6b4d4a3e11",
+      "id": "4798127a-69f0-4eda-92fb-add5a5f83afa",
       "name": "Postgres Chat Memory",
       "credentials": {
         "postgres": {
-          "id": "lZKNcJhVZD5rCkZk_INVALID",
+          "id": "lZKNcJhVZD5rCkZk",
           "name": "Postgres account 3"
         }
       }
@@ -1243,31 +1243,17 @@
       "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
       "typeVersion": 1,
       "position": [
-        1104,
-        304
+        928,
+        272
       ],
-      "id": "8a266076-d2d6-4eb2-90aa-bded85552980",
+      "id": "7803880c-e86d-4469-9d28-709447564cdf",
       "name": "Google Gemini Chat Model",
       "credentials": {
         "googlePalmApi": {
-          "id": "npFYeWDWRwkqivvM_INVALID",
+          "id": "npFYeWDWRwkqivvM",
           "name": "Google Gemini(PaLM) Api account 7"
         }
       }
-    },
-    {
-      "parameters": {
-        "options": {}
-      },
-      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
-      "typeVersion": 1.4,
-      "position": [
-        768,
-        224
-      ],
-      "id": "f3cbd7c8-0bc4-496d-9f96-eaf347ab7754",
-      "name": "When chat message received",
-      "webhookId": "2120c722-e356-4a23-b4bb-6c378a68417c"
     },
     {
       "parameters": {
@@ -1281,7 +1267,7 @@
         },
         "options": {}
       },
-      "id": "ba5f0dba-8f5b-4f5c-84e2-425b33ec0194",
+      "id": "254ddf6b-1552-4a4e-830f-ef14e9f072be",
       "name": "Summarize",
       "type": "n8n-nodes-base.summarize",
       "typeVersion": 1,
@@ -1303,7 +1289,7 @@
           "queryName": "match_documents"
         }
       },
-      "id": "4561b938-2584-46e1-9390-27ab44776a92",
+      "id": "5a0f4017-5e3a-4046-827c-c0654006df53",
       "name": "Insert into Supabase Vectorstore",
       "type": "@n8n/n8n-nodes-langchain.vectorStoreSupabase",
       "typeVersion": 1,
@@ -1313,7 +1299,7 @@
       ],
       "credentials": {
         "supabaseApi": {
-          "id": "9U5AJS3DW39AREVd_INVALID",
+          "id": "gJbsSsZuF9wkSHGU",
           "name": "Supabase account"
         }
       }
@@ -1323,7 +1309,7 @@
         "aggregate": "aggregateAllItemData",
         "options": {}
       },
-      "id": "18ca4d6d-82d5-4247-8afc-1266a0f4e335",
+      "id": "e820ce2d-5126-49d9-9a0a-e1326a3beefb",
       "name": "Aggregate",
       "type": "n8n-nodes-base.aggregate",
       "typeVersion": 1,
@@ -1351,7 +1337,7 @@
           }
         }
       },
-      "id": "dfe71641-9c5c-45dd-a68b-1169b34ce939",
+      "id": "8d2f2720-282d-444d-80d0-a08c9e52e3a7",
       "name": "Default Data Loader",
       "type": "@n8n/n8n-nodes-langchain.documentDefaultDataLoader",
       "typeVersion": 1,
@@ -1364,7 +1350,7 @@
       "parameters": {
         "chunkOverlap": 100
       },
-      "id": "0bc1a3bf-83bb-494d-af6d-8ac7a5a5bcba",
+      "id": "93de392d-46ef-4cf1-877f-ee6eeffc0b5b",
       "name": "Character Text Splitter1",
       "type": "@n8n/n8n-nodes-langchain.textSplitterCharacterTextSplitter",
       "typeVersion": 1,
@@ -1383,14 +1369,43 @@
         3472,
         1184
       ],
-      "id": "a3f53591-9ece-42eb-8d85-bac85b9592ec",
+      "id": "84c09fcb-6595-449d-a473-30de1f9d94a6",
       "name": "Embeddings OpenAI1",
       "credentials": {
         "openAiApi": {
-          "id": "O00uQUVJ3Z2xrDsL_INVALID",
+          "id": "O00uQUVJ3Z2xrDsL",
           "name": "OpenAi account 7"
         }
       }
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
+      "typeVersion": 1.4,
+      "position": [
+        592,
+        224
+      ],
+      "id": "6cf901e5-48fe-43e9-ad22-2a659837e462",
+      "name": "When chat message received",
+      "webhookId": "70c401f0-351f-4ae3-8358-00a1092ef064"
+    },
+    {
+      "parameters": {
+        "content": "\n",
+        "height": 432,
+        "width": 3232
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -176,
+        1744
+      ],
+      "id": "3c0d59f1-e6a5-4f91-b03a-65798df448df",
+      "name": "Sticky Note"
     }
   ],
   "pinData": {},
@@ -1785,17 +1800,6 @@
         ]
       ]
     },
-    "When chat message received": {
-      "main": [
-        [
-          {
-            "node": "Edit Fields",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
     "Summarize": {
       "main": [
         [
@@ -1866,18 +1870,29 @@
           }
         ]
       ]
+    },
+    "When chat message received": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     }
   },
-  "active": false,
+  "active": true,
   "settings": {
     "executionOrder": "v1",
     "availableInMCP": false
   },
-  "versionId": "64c4e41e-453c-46d8-8f2b-d569b85fbcf6",
+  "versionId": "f07db7e4-f93b-4fa1-add8-90d37f02fc26",
   "meta": {
     "templateCredsSetupCompleted": true,
     "instanceId": "8ae9064574590f4bef62fe6c8cafaae52a5a90dd40cb184103af1049753a2d5d"
   },
-  "id": "LbLPI1zY73DkHxpapgJXV",
+  "id": "wSmhPYPLcaNYX09yOXaA8",
   "tags": []
 }
