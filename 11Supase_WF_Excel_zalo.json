@@ -18,7 +18,7 @@
           }
         }
       },
-      "id": "2a8c2346-464f-4655-8ebe-9ad992470cab",
+      "id": "7c82ad43-3416-4e45-9b67-4132a0f64e08",
       "name": "Download File",
       "type": "n8n-nodes-base.googleDrive",
       "typeVersion": 3,
@@ -29,8 +29,8 @@
       "executeOnce": true,
       "credentials": {
         "googleDriveOAuth2Api": {
-          "id": "jqgepkLF44KNH6uA",
-          "name": "Google Drive account"
+          "id": "e2osjsVHgsECOqGE",
+          "name": "Google Drive account 4"
         }
       }
     },
@@ -46,15 +46,15 @@
         "triggerOn": "specificFolder",
         "folderToWatch": {
           "__rl": true,
-          "value": "157nA55QsBR1wYO0NMO5mubVUQGqlz-2r",
+          "value": "1QjXff8V1xgtME8XEkyrQQN3jBuq4dcgN",
           "mode": "list",
-          "cachedResultName": "TroLyNghiepVu",
-          "cachedResultUrl": "https://drive.google.com/drive/folders/157nA55QsBR1wYO0NMO5mubVUQGqlz-2r"
+          "cachedResultName": "00.Tpdf",
+          "cachedResultUrl": "https://drive.google.com/drive/folders/1QjXff8V1xgtME8XEkyrQQN3jBuq4dcgN"
         },
         "event": "fileCreated",
         "options": {}
       },
-      "id": "8c518c53-53b5-4bf5-8186-addc26dc6974",
+      "id": "6839fd5b-a3d2-495d-81f4-7238d21c263c",
       "name": "File Created",
       "type": "n8n-nodes-base.googleDriveTrigger",
       "typeVersion": 1,
@@ -64,8 +64,8 @@
       ],
       "credentials": {
         "googleDriveOAuth2Api": {
-          "id": "jqgepkLF44KNH6uA",
-          "name": "Google Drive account"
+          "id": "vT971jVDaeXm38jP",
+          "name": "Google Drive account 18"
         }
       }
     },
@@ -81,15 +81,15 @@
         "triggerOn": "specificFolder",
         "folderToWatch": {
           "__rl": true,
-          "value": "157nA55QsBR1wYO0NMO5mubVUQGqlz-2r",
+          "value": "1QjXff8V1xgtME8XEkyrQQN3jBuq4dcgN",
           "mode": "list",
-          "cachedResultName": "TroLyNghiepVu",
-          "cachedResultUrl": "https://drive.google.com/drive/folders/157nA55QsBR1wYO0NMO5mubVUQGqlz-2r"
+          "cachedResultName": "00.Tpdf",
+          "cachedResultUrl": "https://drive.google.com/drive/folders/1QjXff8V1xgtME8XEkyrQQN3jBuq4dcgN"
         },
         "event": "fileUpdated",
         "options": {}
       },
-      "id": "cb954231-a44e-4b23-8c7f-3f0bd1bde9e9",
+      "id": "50f0375d-8e4e-4a2a-85cc-bc4cdc42f5f9",
       "name": "File Updated",
       "type": "n8n-nodes-base.googleDriveTrigger",
       "typeVersion": 1,
@@ -99,8 +99,8 @@
       ],
       "credentials": {
         "googleDriveOAuth2Api": {
-          "id": "jqgepkLF44KNH6uA",
-          "name": "Google Drive account"
+          "id": "e2osjsVHgsECOqGE",
+          "name": "Google Drive account 4"
         }
       }
     },
@@ -111,7 +111,7 @@
         "filterType": "string",
         "filterString": "=metadata->>file_id=like.*{{ $json.file_id }}*"
       },
-      "id": "59f72036-268d-491f-a570-229c6a9866ca",
+      "id": "d316ad00-94e5-4c91-ad17-7dbeb8a3be09",
       "name": "Delete Old Doc Rows",
       "type": "n8n-nodes-base.supabase",
       "typeVersion": 1,
@@ -122,7 +122,7 @@
       "alwaysOutputData": true,
       "credentials": {
         "supabaseApi": {
-          "id": "BonQSibwzCslkKPE",
+          "id": "9U5AJS3DW39AREVd",
           "name": "Supabase account"
         }
       }
@@ -133,7 +133,7 @@
         "height": 465,
         "width": 1036
       },
-      "id": "90c6cb80-e4f5-4879-968e-cf9391144ee3",
+      "id": "183f9daf-27b2-489b-908e-d433a7c3b8af",
       "name": "Sticky Note2",
       "type": "n8n-nodes-base.stickyNote",
       "typeVersion": 1,
@@ -146,7 +146,7 @@
       "parameters": {
         "options": {}
       },
-      "id": "ad166d3b-365a-4d81-86b3-d2ed0166535a",
+      "id": "2d4a158b-1db0-4643-824a-d5fd6a9510f7",
       "name": "Respond to Webhook",
       "type": "n8n-nodes-base.respondToWebhook",
       "typeVersion": 1.1,
@@ -175,7 +175,7 @@
         },
         "options": {}
       },
-      "id": "4b2e7eef-6da6-4d0b-b588-c48f1e2962fa",
+      "id": "9ac9b2d1-e7d8-4a75-9dc3-cf9d67023709",
       "name": "Edit Fields",
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
@@ -191,7 +191,7 @@
         "responseMode": "responseNode",
         "options": {}
       },
-      "id": "589e2b9f-4bd6-41fe-b329-f8737263efe8",
+      "id": "86c645de-8dca-4353-95fa-5c272da339ec",
       "name": "Webhook",
       "type": "n8n-nodes-base.webhook",
       "typeVersion": 2,
@@ -206,10 +206,10 @@
         "promptType": "define",
         "text": "={{ $json.chatInput }}",
         "options": {
-          "systemMessage": "=Bạn là Thu Nhi - Trợ lý Nghiệp Vụ của Công ty ABC.\nPHẦN CHÀO ĐẦU TIÊN:\n\"Xin chào! Tôi là Thu Nhi - Trợ lý Nghiệp Vụ của Công ty ABC 👋\nTôi có thể hỗ trợ bạn về:\n\n📄 Các biểu mẫu, hợp đồng\n📋 Quy trình nghiệp vụ\n❓ Giải đáp thắc mắc theo tài liệu\n\nBạn cần hỗ trợ gì ạ?\"\n\nQUY TẮC BẮT BUỘC:\n\nCHỈ trả lời dựa trên nội dung có trong tài liệu\nPHẢI trích dẫn nguồn cụ thể (phần mục nào trong tài liệu)\nKHÔNG bịa đặt, KHÔNG thêm thông tin không có trong tài liệu\nTrả lời NGẮN GỌN, súc tích\nNếu không tìm thấy thông tin → nói rõ \"Thông tin này không có trong tài liệu\"\nNếu câu hỏi ngoài phạm vi tài liệu → \"Thông tin này nằm ngoài phạm vi tài liệu của tôi. Đề nghị bạn liên hệ [phòng ban có liên quan] để được hỗ trợ chính xác nhé!\"\n\n\nĐỊNH DẠNG TRẢ LỜI:\n\nCâu trả lời ngắn gọn\nTrích nguồn: [Mục X - Tên phần]\nLink Tài Liệu\n\nVÍ DỤ:\n❌ SAI:\nUser: \"Cho tôi xem mẫu hợp đồng\"\nBot: \"Dạ, công ty có nhiều mẫu hợp đồng khác nhau tùy theo từng loại công việc. Anh/chị có thể liên hệ phòng nhân sự để được tư vấn chi tiết...\"\n✅ ĐÚNG:\nUser: \"Cho tôi xem mẫu hợp đồng\"\nBot: \"Công ty có 4 loại mẫu hợp đồng:\n\nMẫu hợp đồng sản xuất\nMẫu hợp đồng sản xuất POSM\nMẫu hợp đồng lao động\nMẫu biên bản nghiệm thu\n\n📌 Trích nguồn: [Mục 5 - Mẫu hợp đồng & biểu mẫu]\"\n\nUser: \"Ngày làm việc trong tuần là thế nào?\"\nBot: \"Ngày làm việc: Thứ Hai - Thứ Bảy (Thứ Bảy không bắt buộc, chỉ khi có yêu cầu)\n📌 Trích nguồn: [Mục 1 - Quy định làm việc & chấm công]\"\n\nBẮT ĐẦU TRẢ LỜI THEO QUY TẮC TRÊN."
+          "systemMessage": "=Xin chào! Tôi là Thu Nhi - Trợ lý Nghiệp Vụ của Công ty Anh Lập Trình 👋\nTôi có thể hỗ trợ bạn về:\n\nTrả lời câu hỏi dựa trên dữ liệu quy trình: Khi bạn đặt câu hỏi, hãy luôn kiểm tra node “Get File Contents” để lấy nội dung tệp và dùng đúng thông tin đó để phản hồi.\n\nĐảm bảo tính nhất quán: Mọi lần trả lời đều thực hiện bước kiểm tra node “Get File Contents” trước, và trả lời theo nội dung lấy được từ node này (luôn luôn như vậy)."
         }
       },
-      "id": "daddc54f-3ec8-431f-8dfa-fe90e9b47324",
+      "id": "d16b80ef-d17b-4388-bec5-3d973c699057",
       "name": "RAG AI Agent",
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 1.6,
@@ -353,7 +353,7 @@
           "fallbackOutput": "extra"
         }
       },
-      "id": "84c9ecac-1c1e-4e1c-a0a3-00a0fd95fc8a",
+      "id": "c28d561c-1796-4534-bf7e-258791f2592e",
       "name": "Switch",
       "type": "n8n-nodes-base.switch",
       "typeVersion": 3,
@@ -367,7 +367,7 @@
         "operation": "xlsx",
         "options": {}
       },
-      "id": "9b1d90e1-5480-4464-82f9-6fe82b00f9eb",
+      "id": "4b99809d-8834-4d18-9bbc-c9417d6e1640",
       "name": "Extract from Excel",
       "type": "n8n-nodes-base.extractFromFile",
       "typeVersion": 1,
@@ -399,10 +399,10 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        2592,
-        736
+        3104,
+        640
       ],
-      "id": "7af235f3-babe-4820-9d09-ae7481d06b09",
+      "id": "b4a32b9a-9e1a-4710-a311-06e06d8f9cab",
       "name": "Set Schema"
     },
     {
@@ -415,7 +415,7 @@
         1824,
         896
       ],
-      "id": "ca40e6b9-3e27-4c91-8ad1-5726dfd3dfa2",
+      "id": "3ad52cc5-7f84-43b4-a6ef-fec8ca91bf47",
       "name": "Extract from CSV"
     },
     {
@@ -431,7 +431,7 @@
         0
       ],
       "typeVersion": 1,
-      "id": "a5d574a6-3dce-48cb-9593-00b68e564cf2",
+      "id": "d99e68a8-df7d-47b1-85b7-887e7491c7e1",
       "name": "Sticky Note3"
     },
     {
@@ -459,12 +459,12 @@
         1360,
         304
       ],
-      "id": "2b130370-69bb-4ae9-bcac-2818fd98840f",
+      "id": "cff88089-1259-4ff4-a77a-24ece427def9",
       "name": "List Documents",
       "credentials": {
         "postgres": {
-          "id": "Gmw9zIF9MkvR15tY",
-          "name": "Postgres account"
+          "id": "lZKNcJhVZD5rCkZk",
+          "name": "Postgres account 3"
         }
       }
     },
@@ -484,12 +484,12 @@
         1536,
         304
       ],
-      "id": "65166100-fb98-44d0-b3f6-21e7f08cf328",
+      "id": "b4bb6947-d852-45c0-babe-9fa4d6b20a60",
       "name": "Get File Contents",
       "credentials": {
         "postgres": {
-          "id": "Gmw9zIF9MkvR15tY",
-          "name": "Postgres account"
+          "id": "lZKNcJhVZD5rCkZk",
+          "name": "Postgres account 3"
         }
       }
     },
@@ -505,13 +505,13 @@
         32,
         592
       ],
-      "id": "7ba955e8-8cdb-47a9-8240-917650e9d448",
+      "id": "a7c6ce4c-7582-41e3-aeef-2bfff43e7c87",
       "name": "Loop Over Items"
     },
     {
       "parameters": {
         "operation": "executeQuery",
-        "query": "-- Kích hoạt extension pgvector\nCREATE EXTENSION IF NOT EXISTS vector;\n\n-- Tạo bảng lưu metadata của tài liệu\nCREATE TABLE document_metadata (\n    id TEXT PRIMARY KEY,\n    title TEXT,\n    url TEXT,\n    ggdrive_di TEXT,\n    created_at TIMESTAMP DEFAULT NOW(),\n    schema TEXT\n);\n\n-- Tạo bảng lưu các dòng dữ liệu của tài liệu\nCREATE TABLE document_rows (\n    id SERIAL PRIMARY KEY,\n    dataset_id TEXT REFERENCES document_metadata(id),\n    row_data JSONB  -- Lưu trữ dữ liệu dòng thực tế\n);\n\n-- Tạo bảng lưu trữ tài liệu và embedding của chúng\nCREATE TABLE documents (\n  id BIGSERIAL PRIMARY KEY,\n  content TEXT,  -- Nội dung tài liệu\n  metadata JSONB,  -- Metadata của tài liệu\n  embedding VECTOR(1536)  -- 1536 là kích thước của embedding, có thể thay đổi tùy theo nhu cầu\n);\n\n-- Tạo hàm để tìm kiếm tài liệu dựa trên embedding\nCREATE FUNCTION match_documents (\n  query_embedding VECTOR(1536),\n  match_count INT DEFAULT NULL,\n  filter JSONB DEFAULT '{}'\n) RETURNS TABLE (\n  doc_id BIGINT,\n  content TEXT,\n  metadata JSONB,\n  similarity FLOAT\n)\nLANGUAGE plpgsql\nAS $$\nBEGIN\n  RETURN QUERY\n  SELECT\n    documents.id AS doc_id,  -- Đổi tên cột 'id' của bảng 'documents' thành 'doc_id'\n    documents.content,\n    documents.metadata,\n    1 - (documents.embedding <=> query_embedding) AS similarity\n  FROM documents\n  JOIN document_metadata ON documents.id = document_metadata.id  -- Liên kết với bảng document_metadata\n  LEFT JOIN document_rows ON document_metadata.id = document_rows.dataset_id  -- Liên kết với bảng document_rows\n  WHERE documents.metadata @> filter\n  ORDER BY documents.embedding <=> query_embedding\n  LIMIT match_count;\nEND;\n$$;\n",
+        "query": "-- Kích hoạt extension pgvector\nCREATE EXTENSION IF NOT EXISTS vector;\nDROP FUNCTION IF EXISTS public.match_documents(vector, int, jsonb);\n\n-- Tạo bảng lưu metadata của tài liệu\nCREATE TABLE document_metadata (\n    id TEXT PRIMARY KEY,\n    title TEXT,\n    url TEXT,\n    ggdrive_di TEXT,\n    created_at TIMESTAMP DEFAULT NOW(),\n    schema TEXT\n);\n\n-- Tạo bảng lưu các dòng dữ liệu của tài liệu\nCREATE TABLE document_rows (\n    id SERIAL PRIMARY KEY,\n    dataset_id TEXT REFERENCES document_metadata(id),\n    row_data JSONB  -- Lưu trữ dữ liệu dòng thực tế\n);\n\n-- Tạo bảng lưu trữ tài liệu và embedding của chúng\nCREATE TABLE documents (\n  id BIGSERIAL PRIMARY KEY,\n  content TEXT,  -- Nội dung tài liệu\n  metadata JSONB,  -- Metadata của tài liệu\n  embedding VECTOR(1536)  -- 1536 là kích thước của embedding, có thể thay đổi tùy theo nhu cầu\n);\n\n-- Tạo hàm để tìm kiếm tài liệu dựa trên embedding\nCREATE FUNCTION match_documents (\n  query_embedding VECTOR(1536),\n  match_count INT DEFAULT NULL,\n  filter JSONB DEFAULT '{}'\n) RETURNS TABLE (\n  doc_id BIGINT,\n  content TEXT,\n  metadata JSONB,\n  similarity FLOAT\n)\nLANGUAGE plpgsql\nAS $$\nBEGIN\n  RETURN QUERY\n  SELECT\n    documents.id AS doc_id,  -- Đổi tên cột 'id' của bảng 'documents' thành 'doc_id'\n    documents.content,\n    documents.metadata,\n    1 - (documents.embedding <=> query_embedding) AS similarity\n  FROM documents\n  JOIN document_metadata ON documents.id = document_metadata.id  -- Liên kết với bảng document_metadata\n  LEFT JOIN document_rows ON document_metadata.id = document_rows.dataset_id  -- Liên kết với bảng document_rows\n  WHERE documents.metadata @> filter\n  ORDER BY documents.embedding <=> query_embedding\n  LIMIT match_count;\nEND;\n$$;\n",
         "options": {}
       },
       "type": "n8n-nodes-base.postgres",
@@ -520,12 +520,12 @@
         256,
         80
       ],
-      "id": "9d3b3935-547a-4d44-a096-6abaedbc0e98",
+      "id": "a621ef17-93b3-47e2-af67-a6d83a53d856",
       "name": "Create Documents Table and Match Function",
       "credentials": {
         "postgres": {
-          "id": "Gmw9zIF9MkvR15tY",
-          "name": "Postgres account"
+          "id": "lZKNcJhVZD5rCkZk",
+          "name": "Postgres account 3"
         }
       }
     },
@@ -549,13 +549,13 @@
         752,
         608
       ],
-      "id": "d6ff22a4-5a77-4b2a-b3f1-d9018feb6c4d",
+      "id": "3e65b597-93d7-4c62-8e0d-d4cbd21d4a03",
       "name": "Delete Old Data Rows",
       "alwaysOutputData": true,
       "executeOnce": true,
       "credentials": {
         "supabaseApi": {
-          "id": "BonQSibwzCslkKPE",
+          "id": "9U5AJS3DW39AREVd",
           "name": "Supabase account"
         }
       }
@@ -646,13 +646,13 @@
         912,
         608
       ],
-      "id": "10466512-527d-4265-afd4-e93c67234eac",
+      "id": "1cd39f59-a1b3-49df-b8b0-47964cf1eb9d",
       "name": "Insert Document Metadata",
       "executeOnce": true,
       "credentials": {
         "postgres": {
-          "id": "Gmw9zIF9MkvR15tY",
-          "name": "Postgres account"
+          "id": "lZKNcJhVZD5rCkZk",
+          "name": "Postgres account 3"
         }
       }
     },
@@ -716,15 +716,15 @@
       "type": "n8n-nodes-base.postgres",
       "typeVersion": 2.5,
       "position": [
-        2304,
+        2368,
         912
       ],
-      "id": "824bf45f-a8fa-4eb3-9b47-ee843bdb3f5e",
+      "id": "3bdde09e-cbe2-43b7-8415-c8acf6192e82",
       "name": "Insert Table Rows",
       "credentials": {
         "postgres": {
-          "id": "Gmw9zIF9MkvR15tY",
-          "name": "Postgres account"
+          "id": "lZKNcJhVZD5rCkZk",
+          "name": "Postgres account 3"
         }
       }
     },
@@ -810,15 +810,15 @@
       "type": "n8n-nodes-base.postgres",
       "typeVersion": 2.5,
       "position": [
-        2848,
-        736
+        3456,
+        640
       ],
-      "id": "9881b7df-a5a4-4171-8699-5c86b281ee79",
+      "id": "f66eecef-1f5a-4539-9a8d-19a9871d74d5",
       "name": "Update Schema for Document Metadata",
       "credentials": {
         "postgres": {
-          "id": "Gmw9zIF9MkvR15tY",
-          "name": "Postgres account"
+          "id": "lZKNcJhVZD5rCkZk",
+          "name": "Postgres account 3"
         }
       }
     },
@@ -834,13 +834,13 @@
         320,
         1664
       ],
-      "id": "2f412997-12a1-42d3-9cf8-7a43bd38b625",
+      "id": "3e94f10f-9589-442c-8ad8-24e4b8062634",
       "name": "Node_postgres",
       "alwaysOutputData": true,
       "credentials": {
         "postgres": {
-          "id": "Gmw9zIF9MkvR15tY",
-          "name": "Postgres account"
+          "id": "lZKNcJhVZD5rCkZk",
+          "name": "Postgres account 3"
         }
       }
     },
@@ -875,7 +875,7 @@
         1840,
         1664
       ],
-      "id": "4d6a7420-fe88-4f42-9dfe-e26c3c17e63a",
+      "id": "e867b0bc-2c56-4cb8-a747-ae410ed42a0c",
       "name": "If"
     },
     {
@@ -908,7 +908,7 @@
         944,
         832
       ],
-      "id": "d96d9a4c-9232-43ef-a2ef-8a48a1350f02",
+      "id": "d94db8a2-797d-4524-a40b-f3f8ed8cb4e6",
       "name": "If1"
     },
     {
@@ -931,7 +931,7 @@
         512,
         1664
       ],
-      "id": "1e61bedf-8c52-444f-8870-85c27d49f28d",
+      "id": "75a5c367-7a71-48dd-be57-b47fd1252431",
       "name": "AggregateDB"
     },
     {
@@ -944,7 +944,7 @@
         1168,
         1664
       ],
-      "id": "98ba149d-0c5c-453e-b164-1eec147fcae4",
+      "id": "fcc90955-c198-4a7d-be17-0d5358307af3",
       "name": "Code1",
       "alwaysOutputData": true
     },
@@ -964,9 +964,8 @@
         32,
         1664
       ],
-      "id": "240486cf-93c4-41d9-9f91-e00600601005",
-      "name": "Schedule Trigger",
-      "disabled": true
+      "id": "624ae498-3e8b-4749-bf6a-4701bfec3702",
+      "name": "Schedule Trigger"
     },
     {
       "parameters": {
@@ -981,7 +980,7 @@
         2128,
         1648
       ],
-      "id": "5255a11c-009a-46a2-8605-e9c84386795f",
+      "id": "cf8a765d-af80-4740-9bb6-7f96a48c16ba",
       "name": "Loop Over Items2"
     },
     {
@@ -1004,13 +1003,13 @@
         2384,
         1680
       ],
-      "id": "45c83cf5-1b22-4f38-a20b-f564a5ca37bb",
+      "id": "6e1d54d8-3ab8-41fc-9b13-5065f5508304",
       "name": "Delete Document_Rows",
       "alwaysOutputData": true,
       "executeOnce": true,
       "credentials": {
         "supabaseApi": {
-          "id": "BonQSibwzCslkKPE",
+          "id": "9U5AJS3DW39AREVd",
           "name": "Supabase account"
         }
       }
@@ -1035,13 +1034,13 @@
         2560,
         1680
       ],
-      "id": "ea3aa149-1ea0-47ca-8e6d-8499b0447403",
+      "id": "2f1b2f3d-1c2a-48ba-b465-7abd216d5a41",
       "name": "Delete Document_Metadata",
       "alwaysOutputData": true,
       "executeOnce": true,
       "credentials": {
         "supabaseApi": {
-          "id": "BonQSibwzCslkKPE",
+          "id": "9U5AJS3DW39AREVd",
           "name": "Supabase account"
         }
       }
@@ -1053,7 +1052,7 @@
         "filterType": "string",
         "filterString": "=metadata->>file_id=like.*{{ $('Loop Over Items2').item.json.id }}*"
       },
-      "id": "a60d3fd1-1de7-48fa-97b4-aa85d1a7ea86",
+      "id": "082c9682-d9fe-49e0-a363-36e11ae834c8",
       "name": "Delete Documents",
       "type": "n8n-nodes-base.supabase",
       "typeVersion": 1,
@@ -1064,7 +1063,7 @@
       "alwaysOutputData": true,
       "credentials": {
         "supabaseApi": {
-          "id": "BonQSibwzCslkKPE",
+          "id": "9U5AJS3DW39AREVd",
           "name": "Supabase account"
         }
       }
@@ -1100,7 +1099,7 @@
         2848,
         1680
       ],
-      "id": "0dc79571-3a7e-4de6-bae2-8e8496cc3cc2",
+      "id": "19a14639-e73c-4ce2-93ee-90cc4af815fa",
       "name": "If3"
     },
     {
@@ -1130,13 +1129,13 @@
         720,
         1664
       ],
-      "id": "5813cc72-813f-4fd6-bea6-b801f343984b",
+      "id": "b0928748-9820-41a1-98a6-92a03fc93223",
       "name": "Node_drive",
       "alwaysOutputData": true,
       "credentials": {
         "googleDriveOAuth2Api": {
-          "id": "jqgepkLF44KNH6uA",
-          "name": "Google Drive account"
+          "id": "e2osjsVHgsECOqGE",
+          "name": "Google Drive account 4"
         }
       }
     },
@@ -1152,7 +1151,7 @@
         944,
         1664
       ],
-      "id": "620c8e30-6786-41f2-9eb4-9ffcc2f8b079",
+      "id": "701e3285-4ca7-4f21-bb34-ebc20ec86418",
       "name": "AggregateGGDRive"
     },
     {
@@ -1193,7 +1192,7 @@
         },
         "options": {}
       },
-      "id": "1452a336-fd11-4135-9864-a7640bb5e362",
+      "id": "eef4f262-14bb-4f5b-8f2f-8ea669eb5309",
       "name": "Set File ID_!",
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
@@ -1209,7 +1208,7 @@
         "width": 573,
         "color": 5
       },
-      "id": "9a982b57-1ae9-49af-a1de-10ad5b8bd769",
+      "id": "aced2ba9-3acb-4b75-b643-d463f4666c2f",
       "name": "Sticky Note4",
       "type": "n8n-nodes-base.stickyNote",
       "typeVersion": 1,
@@ -1225,15 +1224,15 @@
       "type": "@n8n/n8n-nodes-langchain.memoryPostgresChat",
       "typeVersion": 1.3,
       "position": [
-        1264,
-        320
+        1232,
+        304
       ],
-      "id": "2dd84ccc-d46c-4a5b-bf55-631b138ce6ea",
+      "id": "0902875d-7ed5-4beb-b458-ef6b4d4a3e11",
       "name": "Postgres Chat Memory",
       "credentials": {
         "postgres": {
-          "id": "Gmw9zIF9MkvR15tY",
-          "name": "Postgres account"
+          "id": "lZKNcJhVZD5rCkZk",
+          "name": "Postgres account 3"
         }
       }
     },
@@ -1247,12 +1246,149 @@
         1104,
         304
       ],
-      "id": "7bacb0d8-f2ce-4975-b823-8b9044a836de",
+      "id": "8a266076-d2d6-4eb2-90aa-bded85552980",
       "name": "Google Gemini Chat Model",
       "credentials": {
         "googlePalmApi": {
-          "id": "QBbmvjQGtzhR1ihJ",
-          "name": "Google Gemini(PaLM) Api account"
+          "id": "npFYeWDWRwkqivvM",
+          "name": "Google Gemini(PaLM) Api account 7"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
+      "typeVersion": 1.4,
+      "position": [
+        768,
+        224
+      ],
+      "id": "f3cbd7c8-0bc4-496d-9f96-eaf347ab7754",
+      "name": "When chat message received",
+      "webhookId": "2120c722-e356-4a23-b4bb-6c378a68417c"
+    },
+    {
+      "parameters": {
+        "fieldsToSummarize": {
+          "values": [
+            {
+              "aggregation": "concatenate",
+              "field": "data"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "ba5f0dba-8f5b-4f5c-84e2-425b33ec0194",
+      "name": "Summarize",
+      "type": "n8n-nodes-base.summarize",
+      "typeVersion": 1,
+      "position": [
+        2688,
+        784
+      ]
+    },
+    {
+      "parameters": {
+        "mode": "insert",
+        "tableName": {
+          "__rl": true,
+          "value": "documents",
+          "mode": "list",
+          "cachedResultName": "documents"
+        },
+        "options": {
+          "queryName": "match_documents"
+        }
+      },
+      "id": "4561b938-2584-46e1-9390-27ab44776a92",
+      "name": "Insert into Supabase Vectorstore",
+      "type": "@n8n/n8n-nodes-langchain.vectorStoreSupabase",
+      "typeVersion": 1,
+      "position": [
+        3552,
+        896
+      ],
+      "credentials": {
+        "supabaseApi": {
+          "id": "9U5AJS3DW39AREVd",
+          "name": "Supabase account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "aggregate": "aggregateAllItemData",
+        "options": {}
+      },
+      "id": "18ca4d6d-82d5-4247-8afc-1266a0f4e335",
+      "name": "Aggregate",
+      "type": "n8n-nodes-base.aggregate",
+      "typeVersion": 1,
+      "position": [
+        2336,
+        736
+      ]
+    },
+    {
+      "parameters": {
+        "jsonMode": "expressionData",
+        "jsonData": "={{ $json.data || $json.text || $json.concatenated_data }}",
+        "options": {
+          "metadata": {
+            "metadataValues": [
+              {
+                "name": "=file_id",
+                "value": "={{ $('Set File ID_!').first().json.file_id }}"
+              },
+              {
+                "name": "file_title",
+                "value": "={{ $('Set File ID_!').first().json.file_title }}"
+              }
+            ]
+          }
+        }
+      },
+      "id": "dfe71641-9c5c-45dd-a68b-1169b34ce939",
+      "name": "Default Data Loader",
+      "type": "@n8n/n8n-nodes-langchain.documentDefaultDataLoader",
+      "typeVersion": 1,
+      "position": [
+        3744,
+        1264
+      ]
+    },
+    {
+      "parameters": {
+        "chunkOverlap": 100
+      },
+      "id": "0bc1a3bf-83bb-494d-af6d-8ac7a5a5bcba",
+      "name": "Character Text Splitter1",
+      "type": "@n8n/n8n-nodes-langchain.textSplitterCharacterTextSplitter",
+      "typeVersion": 1,
+      "position": [
+        3824,
+        1440
+      ]
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.embeddingsOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        3472,
+        1184
+      ],
+      "id": "a3f53591-9ece-42eb-8d85-bac85b9592ec",
+      "name": "Embeddings OpenAI1",
+      "credentials": {
+        "openAiApi": {
+          "id": "O00uQUVJ3Z2xrDsL",
+          "name": "OpenAi account 7"
         }
       }
     }
@@ -1308,17 +1444,6 @@
         [
           {
             "node": "RAG AI Agent",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Webhook": {
-      "main": [
-        [
-          {
-            "node": "Edit Fields",
             "type": "main",
             "index": 0
           }
@@ -1386,12 +1511,12 @@
       "main": [
         [
           {
-            "node": "Insert Table Rows",
+            "node": "Aggregate",
             "type": "main",
             "index": 0
           },
           {
-            "node": "Set Schema",
+            "node": "Insert Table Rows",
             "type": "main",
             "index": 0
           }
@@ -1413,12 +1538,7 @@
       "main": [
         [
           {
-            "node": "Insert Table Rows",
-            "type": "main",
-            "index": 0
-          },
-          {
-            "node": "Set Schema",
+            "node": "Aggregate",
             "type": "main",
             "index": 0
           }
@@ -1664,17 +1784,100 @@
           }
         ]
       ]
+    },
+    "When chat message received": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Summarize": {
+      "main": [
+        [
+          {
+            "node": "Insert into Supabase Vectorstore",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Set Schema",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Aggregate": {
+      "main": [
+        [
+          {
+            "node": "Summarize",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Character Text Splitter1": {
+      "ai_textSplitter": [
+        [
+          {
+            "node": "Default Data Loader",
+            "type": "ai_textSplitter",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Embeddings OpenAI1": {
+      "ai_embedding": [
+        [
+          {
+            "node": "Insert into Supabase Vectorstore",
+            "type": "ai_embedding",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Default Data Loader": {
+      "ai_document": [
+        [
+          {
+            "node": "Insert into Supabase Vectorstore",
+            "type": "ai_document",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     }
   },
   "active": false,
   "settings": {
-    "executionOrder": "v1"
+    "executionOrder": "v1",
+    "availableInMCP": false
   },
-  "versionId": "f7b97242-e06a-44d6-9b6c-daa43f4495d1",
+  "versionId": "64c4e41e-453c-46d8-8f2b-d569b85fbcf6",
   "meta": {
     "templateCredsSetupCompleted": true,
-    "instanceId": "9fde6bf1cbed6305030f8acc13711204a75d782b218b963e83a2bb039f8b3728"
+    "instanceId": "8ae9064574590f4bef62fe6c8cafaae52a5a90dd40cb184103af1049753a2d5d"
   },
-  "id": "0VSkv84UoZODoDzA",
+  "id": "LbLPI1zY73DkHxpapgJXV",
   "tags": []
 }
